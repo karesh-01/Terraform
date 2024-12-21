@@ -24,7 +24,7 @@ This overwrites the variable value.
 - In variables.tf, remove the "Default" line item. 
 - Apply the infrastructure. You should be asked for a name for the instance, because there is no default. Remember the name you choose.
 - Check the name of the instance in the AWS console.
-- Destroy the infrastructure. You will be required to type the name of the instance exactly. 
+- Destroy the infrastructure. You will be required to type the nus-east-1ame of the instance exactly. 
 
 ## Procedure - Extra Credit!
 - Create a variable in main.tf for the AMI. Then, set the value for that AMI in variables.tf. 
@@ -58,7 +58,7 @@ The types of variables that Terraform can use are similar to other programming l
 **Complex Types**
 
   - **list**: (also known as tuple) A sequence of values. Each value sits in double-quotes and are comma-separated. Uses square brackets `[]` as delimiters.
-    - Ex: `["us-east-1","us-east-2"]`
+    - Ex: `["us-east-1","us-east-1"]`
     - Code Example: `default = ["Alice", "Bob", "Charlie", "Denise", "Erin", "Frank", "Darth" ]`
       - See [Lab 14 - variables.tf,](../lesson-14/instances/variables.tf) for this example used in a Terraform configuration.
   - **map**: (also known as object) a group of values using labels and values - collectively known as key pairs. Uses curly braces `{}` as delimiters.

@@ -13,7 +13,7 @@ terraform {
 
 ## The first provider is shown in the normal manner.
 provider "aws" {
-  region = "us-east-2"
+  region = "us-east-1"
 }
 
 ## The second provider uses an alias. "oregon" is the alias for "us-west-2"
@@ -22,8 +22,8 @@ provider "aws" {
   region = "us-west-2"
 }
 
-## Create an instance the way you normally would in the us-east-2 region. 
-## This will be Debian Linux running in Ohio (us-east-2).
+## Create an instance the way you normally would in the us-east-1 region. 
+## This will be Debian Linux running in Ohio (us-east-1).
 
 resource "aws_instance" "test_instance" {
   ami           = "ami-0021ca1c84e982559"

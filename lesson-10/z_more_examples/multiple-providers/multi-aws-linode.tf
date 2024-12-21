@@ -22,11 +22,11 @@ terraform {
 ## In provider blocks we specify things like the AWS region
 ## and the token used to allow access to Linode
 provider "aws" {
-  region = "us-east-2"
+  region = "us-east-1"
 }
 
 # provider "linode" {
-#   region = "us-east-2"
+#   region = "us-east-1"
 #   # token = var.token  
 # }
 

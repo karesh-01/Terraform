@@ -4,7 +4,7 @@
 > IMPORTANT! This lab will incur a cost. If you do not want your credit card to be charged, do not apply the infrastructure!
 > Due to the amount of resources that are being created, it could cost a dollar or more. 
 
-> Note: This lab is built to work in the us-east-2 AWS region. It will not function if you change the region (without changing several other parameters in various files.)
+> Note: This lab is built to work in the us-east-1 AWS region. It will not function if you change the region (without changing several other parameters in various files.)
 
 # Procedure
 This is a longer lab, so I broke it up into subsections. Take your time and analyze the modules and code as you go.

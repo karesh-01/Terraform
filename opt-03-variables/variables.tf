@@ -1,7 +1,7 @@
 variable "region" {
   description = "The AWS region you would like to use"
   type = string
-  # For example, us-east-2
+  # For example, us-east-1
 }
 
 variable "ami" {

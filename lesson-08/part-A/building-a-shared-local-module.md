@@ -72,7 +72,7 @@ Move to your user folder directory. For example:
 `cd ../../dave-config`
 
 Create and edit a main.tf file. Add the following:
-- provider block. Be sure to select the region that you want to use. If in doubt, use the one I am using which is us-east-2.
+- provider block. Be sure to select the region that you want to use. If in doubt, use the one I am using which is us-east-1.
 - resource block for the aws_vpc. A good option is to use 10.0.0.0/16
 - module block. Here you will call the module (with the *source* argument), and assign values to the variables that are described in the module. For example:
 ```
@@ -82,7 +82,7 @@ module "webserver-dave" {
   cidr_block = "10.0.0.0/16"
   ami        = "ami-0021ca1c84e982559"
   # Remember, select an AMI that exists in your AWS region.
-  # If in doubt, use the AMI above and the us-east-2 region.
+  # If in doubt, use the AMI above and the us-east-1 region.
   instance_type  = "t2.micro"
   webserver_name = "Dave's"
 }
