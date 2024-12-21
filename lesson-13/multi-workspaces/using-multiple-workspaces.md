@@ -71,7 +71,7 @@ Run `terraform init` to initialize the directory. This applies to the entire wor
 Run `terraform apply`. This will create infrastructure and store its state file in the terraform.tfstate.d/test1 directory. Answer the questions with the following:
   - Instance type = t2.micro
   - Name = test1-instance
-  - Region = us-east-1
+  - Region = us-east-2
 
 > Note: If you choose to use other values, make sure to write them down because you will be asked for them again during the destroy stage. 
 
@@ -88,7 +88,7 @@ Verify that you are now in the test2 workspace with `terraform workspace list`
 Run `terraform apply`. This will create infrastructure and store its state file in the terraform.tfstate.d/test2 directory. Answer the questions with the following:
   - Instance type = t2.nano
   - Name = test2-instance
-  - Region = us-east-1
+  - Region = us-east-2
 
 > Note: If you choose to use other values, make sure to write them down because you will be asked for them again during the destroy stage. 
 

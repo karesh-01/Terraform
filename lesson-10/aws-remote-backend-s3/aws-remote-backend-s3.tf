@@ -5,7 +5,7 @@ terraform {
   backend "s3" {
     bucket = "dpro-bucket-backend"
     key    = "dir1/key"
-    region = "us-east-1"
+    region = "us-east-2"
   }
 
   required_providers {
@@ -19,7 +19,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"  
+  region = "us-east-2"  
 }
 
 resource "aws_iam_user" "user_42" {

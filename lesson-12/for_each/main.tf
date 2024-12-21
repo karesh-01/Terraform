@@ -14,7 +14,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"  
+  region = "us-east-2"  
 }
 
 ## Add an IAM user resource here using a for_each meta-argument with a toset function.
