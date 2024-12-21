@@ -8,7 +8,7 @@ For example, in the provider block of a main.tf file you can specify an AWS acce
 provider "aws" {
   access_key = "<AWS_ACCESS_KEY>"
   secret_key = "<AWS_SECRET_KEY>"
-  region     = "us-east-2"
+  region     = "us-east-1"
 ```
 
 However, this makes the secret key visible to anyone who has access to the terraform directory, and will be impossible to omit from version control. So, this is a bad practice, especially in collaborative environments. 
@@ -28,7 +28,7 @@ Use the `export TF_VAR` command. This is a 3-step process.
   provider "aws" {
     access_key = var.AWS_ACCESS_KEY
 	secret_key = var.AWS_SECRET_KEY
-	region = "us-east-2"
+	region = "us-east-1"
   ```
 - Then, configure variables blocks:
   ```hcl

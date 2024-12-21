@@ -25,10 +25,10 @@ provider "aws" {
   region = "us-east-2"
 }
 
-provider "linode" {
-  region = "us-east"
-  token = var.token  
-}
+# provider "linode" {
+#   region = "us-east-2"
+#   # token = var.token  
+# }
 
 ## In another file we might specify a Linode instance in the following way:
 resource "linode_instance" "lnsf_arch" {
@@ -36,7 +36,7 @@ resource "linode_instance" "lnsf_arch" {
   image           = "linode/arch"
   region          = "us-east"
   type            = "g6-standard-1"
-  authorized_keys = var.key
-  root_pass       = var.password
+  # authorized_keys = var.key
+  # root_pass       = var.password
 }
 ## NOTE: Secure credentials would best be stored in a different fashion!

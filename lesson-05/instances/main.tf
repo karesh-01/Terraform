@@ -1,4 +1,4 @@
-resource "aws_instance" "lesson_06" {
+resource "aws_instance" "lesson_05" {
   ami           = "ami-097a2df4ac947655f"
   instance_type = "t2.micro"
   key_name      = "aws_key"
@@ -8,16 +8,16 @@ resource "aws_instance" "lesson_06" {
     aws_security_group.sg_http.id
   ]
   
-  
-
   tags = {
-    Name                  = "Lesson_06-Cloud-Init"    
+    Name                  = "Lesson_05"
+    Vanquisher_of_Gothmog = "Ecthelion"
+    Vanquisher_of_Ecthelion = "Gothmog"
   }
 }
 
 resource "aws_key_pair" "deployer" {
   key_name   = "aws_key"
-  public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEY2wSO9uShauR5iTr/kNhex8jtUq+3FJjJ3pnKLfc/n arumugam.kareshmmaa@MC1292"
+  public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB8OF0Rb3MQSdnnduEVY7nJHmJn0Mbv7guR6Z04cxWnB arumugam.kareshmmaa@MC1292"
 }
 
 resource "aws_security_group" "sg_ssh" {

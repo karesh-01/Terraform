@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-2"
+  region = "us-east-1"
 }
 
 ## Build an IAM user account resource here with a for_each meta-argument referecing a locals block.

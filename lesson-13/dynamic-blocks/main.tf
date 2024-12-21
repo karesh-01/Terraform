@@ -3,7 +3,7 @@
 ## > Note that labs such as these will require a default VPC and subnet (as usual).
 
 resource "aws_instance" "dynamic_ports" {
-  ami           = "ami-0c7c4e3c6b4941f0f"
+  ami           = "ami-0021ca1c84e982559"
   instance_type = "t2.micro"
   vpc_security_group_ids = [aws_security_group.sg_webserver.id]
   

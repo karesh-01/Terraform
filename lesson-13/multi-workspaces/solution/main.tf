@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "workspace_testing" {
-  ami           = "ami-0c7c4e3c6b4941f0f"
+  ami           = "ami-0021ca1c84e982559"
   instance_type = var.instance_type
 
   tags = {

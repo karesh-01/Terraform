@@ -4,7 +4,7 @@ terraform {
     # Enter the bucket name you chose previously as well as a bucket key.
     bucket = ""
     key = ""
-    region = "us-east-2"
+    region = "us-east-1"
   }
   
   required_providers {

@@ -1,14 +1,14 @@
 variable "region" {
   description = "The AWS region you would like to use"
   type = string
-  # For example, us-east-2
+  # For example, us-east-1
 }
 
 variable "ami" {
   description = "The Amazon machine image to be used"
   type = string
   # I recommend the Debian image we used previously
-  # ami-0c7c4e3c6b4941f0f
+  # ami-0021ca1c84e982559
 }
 
 variable "name" {
